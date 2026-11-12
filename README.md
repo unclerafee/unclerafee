@@ -1,6 +1,4 @@
-from pathlib import Path
-
-readme = r'''<div align="center">
+<div align="center">
 
 # 👋 Hey, I'm Uncle Rafee
 
@@ -74,8 +72,4 @@ I share my journey through the world of technology — exploring AI tools, learn
 **Thanks for stopping by!**
 
 </div>
-'''
 
-path = Path("/mnt/data/README.md")
-path.write_text(readme, encoding="utf-8")
-print(f"Updated README: {path} ({path.stat().st_size} bytes)")
