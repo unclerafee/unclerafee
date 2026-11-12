@@ -1,4 +1,6 @@
-<div align="center">
+from pathlib import Path
+
+readme = r'''<div align="center">
 
 # 👋 Hey, I'm Uncle Rafee
 
@@ -8,40 +10,52 @@
 
 I’m passionate about discovering how technology works, experimenting with new ideas, and sharing what I learn along the way.
 
-[![GitHub followers](https://img.shields.io/github/followers/unclerafee?style=for-the-badge&logo=github&label=Followers)](https://github.com/YOUR_GITHUB_USERNAME)
-[![Profile views](https://komarev.com/ghpvc/?username=unclerafee&style=for-the-badge&color=blueviolet)](https://github.com/YOUR_GITHUB_USERNAME)
+[![GitHub followers](https://img.shields.io/github/followers/unclerafee?style=for-the-badge&logo=github&label=Followers)](https://github.com/unclerafee?tab=followers)
+[![Profile views](https://komarev.com/ghpvc/?username=unclerafee&style=for-the-badge&color=blueviolet)](https://github.com/unclerafee)
 
 </div>
 
 ---
+
+<div align="center">
+
 ## 🚀 What I'm Exploring
 
 | Area | What interests me |
-|---|---|
+|:---:|:---|
 | 🤖 Artificial Intelligence | AI models, practical AI tools, and new developments |
 | 🧩 Agentic AI | AI agents, workflows, and intelligent automation |
 | 💻 Development | Programming, web technologies, and building projects |
 | ⚙️ Automation | Connecting tools and simplifying repetitive tasks |
 | 🎬 Tech Content | Making technology easier to understand and sharing discoveries |
 
+</div>
+
 ## 🧰 Tools & Technologies
 
 *My toolkit is always evolving as I learn and experiment.*
 
-<p>
+<p align="center">
   <img src="https://skillicons.dev/icons?i=python,js,ts,html,css,react,nodejs,git,github,docker,linux,vscode" alt="Technologies and tools" />
 </p>
 
+
 ## 📊 GitHub at a Glance
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&theme=tokyonight" alt="GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&theme=tokyonight" alt="Most used languages" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
-</p>
+<img width="49%" src="https://github-stats-extended.vercel.app/api?username=unclerafee&show_icons=true&hide_border=true&bg_color=0B0D12&title_color=FFC34D&icon_color=6385FF&text_color=F4F5F7&rank_icon=github" alt="GitHub Statistics"/>
+
+<img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=unclerafee&layout=compact&hide_border=true&bg_color=0B0D12&title_color=FFC34D&text_color=F4F5F7" alt="Most Used Languages"/>
+
+<br/>
+
+<img width="80%" src="https://streak-stats.demolab.com?user=unclerafee&hide_border=true&background=0B0D12&ring=FFC34D&fire=6385FF&currStreakLabel=FFC34D&sideLabels=A5AFBE&currStreakNum=F4F5F7&sideNums=F4F5F7&dates=A5AFBE" alt="Contribution Streak"/>
+
+</div>
+
+
+
 
 ## 🎥 Beyond the Code
 
@@ -60,3 +74,8 @@ I share my journey through the world of technology — exploring AI tools, learn
 **Thanks for stopping by!**
 
 </div>
+'''
+
+path = Path("/mnt/data/README.md")
+path.write_text(readme, encoding="utf-8")
+print(f"Updated README: {path} ({path.stat().st_size} bytes)")
